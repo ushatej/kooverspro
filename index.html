@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="script.js"></script>
+ <style>  
+ div{
+      background-color:rgba(173, 40, 133, 0.384);
+  }
+  body{
+      background-image: url(image5.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.96;
+     }
+    h2{ color:blue;
+      font-size: larger;
+  }
+ div a{
+    text-decoration: none;
+}
+</style>
+   <title>Employee screen</title>
+</head>
+<body>
+ <div>
+   <button><a href="add.html"><img src="image1.jpg" width="200px" height="100px">ADD</a></button>
+  </div>
+  <h2>Employee Table</h2>
+    <table id="table" border="1">
+        <thead>
+          <tr>
+            <th width="100"> Employee Id</th>
+            <th width="100">First Name</th>
+            <th width="100">Last Name</th>
+            <th width="100">Mobile No</th>
+            <th width="100">Edit<i class="fa fa-edit"></i></th>
+            <th width="100">Delete<i class="fa fa-trash"></i></th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

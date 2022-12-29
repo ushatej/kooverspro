@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <title>Edit Screen</title>
+    <style> 
+    body{
+        background-color: rgb(226, 210, 210);
+    }
+    
+        input[type=text]{
+         width: 30%;
+        padding: 7px;
+            }
+            #jobTitle{
+                width: 31%;
+        padding: 8px;
+            }
+            #deptName{
+                width: 31%;
+        padding: 8px;
+    }
+            button{
+                width: 13%;
+        padding: 10px;
+        background-color: rgba(231, 241, 245, 0.687);
+        color: black;
+        cursor: pointer;
+        margin-left: 300px;
+            }
+        button:hover{
+            background-color: rgb(89, 178, 89);
+        }
+    
+        label{
+            font-size: large;
+        }
+        h2{
+            
+            background-color: rgb(190, 220, 245);
+         }
+         button a{
+        text-decoration: none;
+    }
+        </style>
+</head>
+<body>
+
+    <h2>Edit Employee Details</h2>
+    <form id="form">
+        <label for="createdBy">Created by:</label><br>
+        <input type="text" id="createdBy" name="createdBy"><br>
+        <label for="updatedBy">Updated By:</label><br>
+        <input type="text" id="updatedBy" name="updatedBy"><br>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="employeeId">Employee ID:</label><br>
+        <input type="text" id="employeeId" name="employeeId"><br>
+        <label for="mobileNo">Mobile No:</label><br>
+        <input type="text" id="mobileNo" name="mobileNo" maxlength="10"><br>
+       <label for="jobtitle">Job title</label><br>
+            <select id="jobTitle" name="jobTitle">
+                <option value=" " > </option>
+                <option value="webdeveloper">web Developer</option>
+                <option value="projectmanager">Project Manager</option>
+                <option value="accountmanager">Account Manager</option>
+                <option value="softwareengineer">Software Engineer</option>
+            </select><br>
+                 <label for="department">Department Name</label><br>
+                <select id="deptName" name="deptName">
+                    <option value=" ">  </option>
+                    <option value="sales">Sales Department</option>
+                    <option value="marketing">Marketing Department</option>
+                    <option value=Finance">Finance Department</option>
+                    <option value="production">Production Department</option>
+                    </select><br>
+                    <label>Date of joining</label><br>
+                    <input type="text" id="datePick" name="datePick"><br>
+        <label for="companyId">Company Branch ID:</label><br>
+        <input type="text" id="companyId" name="companyId"><br>
+        <label for="adress">Adress:</label><br>
+        <textarea id="adress" name="txtarea" rows="3" cols="48"></textarea><br><br>
+    </form>
+    <button onclick="onUpdate()">Update</button>
+    <script src="edit.js"></script>
+</body>
+</html>
